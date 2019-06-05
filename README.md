@@ -2,7 +2,8 @@
 
 Usage:
 
-```class TronXPrv(Xprv):
+```
+class TronXPrv(Xprv):
     def pkh_hasher(self, public_key)
         prefix = b'\x41'
         hasher = sha3.keccak_256()
