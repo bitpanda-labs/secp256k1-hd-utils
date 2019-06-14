@@ -16,7 +16,7 @@ class XPrv(object):
 
     def derive(self, path):
         setup_btcpy('mainnet')
-        return XPrv(self.key.derive(path).encode())
+        return self.__init__(self.key.derive(path).encode(), compressed=self.compressed)
 
     def prv(self):
         setup_btcpy('mainnet')
@@ -42,7 +42,7 @@ class XPub(object):
 
     def derive(self, path):
         setup_btcpy('mainnet')
-        return XPub(self.key.derive(path).encode())
+        return self.__init__(self.key.derive(path).encode(), compressed=self.compressed)
 
     def pub(self):
         setup_btcpy('mainnet')
