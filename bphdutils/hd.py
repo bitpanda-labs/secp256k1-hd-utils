@@ -51,9 +51,9 @@ class XPub(object):
     def pkh(self):
         setup_btcpy('mainnet')
         if self.compressed:
-            return self.pkh_hasher(self.key.key.uncompressed.serialize())
+            return self.pkh_hasher(self.key.key.serialize())
         else:
-            return self.pkh_hasher(self.key.key.uncompressed.serialize())
+            return self.pkh_hasher(self.key.key.uncompressed)
 
     def pkh_hasher(self, public_key):
         raise NotImplemented()
