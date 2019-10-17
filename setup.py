@@ -2,9 +2,9 @@ from distutils.core import setup
 from setuptools import find_packages
 
 setup(name='bitpanda-secp256k1-hd-utils',
-      version='0.0.3',
+      version='0.0.4',
       packages=find_packages(),
-      install_requires=['chainside-btcpy-multi==0.2.77'],
+      install_requires=['chainside-btcpy-multi==0.2.78'],
       description='Python tool for for tezos hd generation',
       author='Oskar Hladky',
       author_email='oskyks1@gmail.com',
